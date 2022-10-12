@@ -31,7 +31,7 @@ function testRepeat() {
     return res;
   }
 }
-console.log('1.most repeated num');
+console.log('//most repeated num');
 console.log(testRepeat(arr));
 
 //2.prime or not
@@ -49,7 +49,7 @@ function isPrime(num) {
     return false;
   }
 }
-console.log('2.check num is prime or not');
+console.log('//check num is prime or not');
 console.log(isPrime(num));
 
 //3.count letters
@@ -62,7 +62,9 @@ for (char of str) {
     countObj[char] = 1;
   }
 }
-console.log('3.count letters');
+console.log('//count letters');
 console.log(countObj);
 const res = Object.keys(countObj).map((key) => `${countObj[key]}${key}`);
 console.log(res.join(''));
+
+
