@@ -1,3 +1,4 @@
+//1.most repeated num
 const arr = [3, 2, 3, 1, 2];
 let obj = {};
 function testRepeat() {
@@ -66,5 +67,3 @@ console.log('//count letters');
 console.log(countObj);
 const res = Object.keys(countObj).map((key) => `${countObj[key]}${key}`);
 console.log(res.join(''));
-
-
