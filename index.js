@@ -34,36 +34,3 @@ function testRepeat() {
 }
 console.log('//most repeated num');
 console.log(testRepeat(arr));
-
-//2.prime or not
-let num = 127;
-let c = 0;
-function isPrime(num) {
-  for (i = 1; i <= num; i++) {
-    if (num % i == 0) {
-      c++;
-    }
-  }
-  if (c == 2) {
-    return true;
-  } else {
-    return false;
-  }
-}
-console.log('//check num is prime or not');
-console.log(isPrime(num));
-
-//3.count letters
-const str = 'fffeerttttoo';
-const countObj = {};
-for (char of str) {
-  if (Object.keys(countObj).includes(char)) {
-    countObj[char] = countObj[char] + 1;
-  } else {
-    countObj[char] = 1;
-  }
-}
-console.log('//count letters');
-console.log(countObj);
-const res = Object.keys(countObj).map((key) => `${countObj[key]}${key}`);
-console.log(res.join(''));
